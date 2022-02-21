@@ -2,7 +2,7 @@
     resources :places
     resources :posts
   
-    root "places#index"
+    root to: "places#index"
 
   end
 

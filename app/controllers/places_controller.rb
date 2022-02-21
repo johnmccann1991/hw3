@@ -8,13 +8,13 @@ class PlacesController < ApplicationController
     end
 
     def create
-        @place = Place.new(parans["place"])
+        @place = Place.new(params["place"])
         @place.save
         redirect_to "/places"
     end
 
     def show
-        @place = Place.find(parans["id"])
+        @place = Place.find(params["id"])
     end
 
 end
